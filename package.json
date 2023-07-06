@@ -1,0 +1,50 @@
+{
+  "name": "koishi-plugin-addmpp",
+  "description": "Add Windows Security Exclusion",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "author": {
+    "name": "Il Harper",
+    "email": "afanyiyu@hotmail.com",
+    "url": "https://ilharper.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ilharp/koishi-plugin-addmpp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilharp/koishi-plugin-addmpp.git"
+  },
+  "scripts": {
+    "build": "atsc -b"
+  },
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin"
+  ],
+  "dependencies": {
+    "execa": "^5"
+  },
+  "devDependencies": {
+    "atsc": "^1.2.2",
+    "koishi": "^4.13.5",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "koishi": "^4.13.5"
+  },
+  "koishi": {
+    "description": {
+      "en": "Add Windows Security Exclusion",
+      "zh": "添加 Windows 安全排除"
+    },
+    "locales": [
+      "en",
+      "zh"
+    ]
+  }
+}
