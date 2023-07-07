@@ -20,7 +20,7 @@ export function apply() {
       '-NoLogo',
       '-NoProfile',
       '-Command',
-      `Exit (Start-Process powershell -Verb RunAs -PassThru -Wait -Argument "-NonInteractive -NoLogo -NoProfile -Command Add-MpPreference -ExclusionPath '${process.cwd()}'").ExitCode`,
+      `Exit (Start-Process powershell -WindowStyle Hidden -Verb RunAs -PassThru -Wait -Argument "-NonInteractive -NoLogo -NoProfile -Command Add-MpPreference -ExclusionPath '${process.cwd()}'").ExitCode`,
     ],
     { stdio: 'inherit', shell: false }
   ).on('close', (code) =>
